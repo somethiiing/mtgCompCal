@@ -1,0 +1,24 @@
+{
+  "name": "mtgcompcal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somethiiing/mtgCompCal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somethiiing/mtgCompCal/issues"
+  },
+  "homepage": "https://github.com/somethiiing/mtgCompCal#readme",
+  "dependencies": {
+    "commandeer": "^1.0.2",
+    "googleapis": "^27.0.0",
+    "request": "^2.88.0"
+  }
+}
