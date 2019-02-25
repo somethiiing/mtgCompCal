@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/somethiiing/mtgCompCal#readme",
   "dependencies": {
-    "commandeer": "^1.0.2",
+    "commander": "^2.9.0",
     "googleapis": "^27.0.0",
-    "request": "^2.88.0"
+    "inquirer": "^3.0.6"
   }
 }
