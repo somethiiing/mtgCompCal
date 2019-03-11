@@ -2,7 +2,9 @@
   "name": "mtgcompcal",
   "version": "1.0.0",
   "description": "",
-  "main": "data.js",
+  "preferGlobal": true,
+  "bin": "./program.js",
+  "main": "program.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +20,9 @@
   "homepage": "https://github.com/somethiiing/mtgCompCal#readme",
   "dependencies": {
     "commander": "^2.9.0",
+    "fb": "^2.0.0",
     "googleapis": "^27.0.0",
-    "inquirer": "^3.0.6"
+    "inquirer": "^3.0.6",
+    "request": "^2.88.0"
   }
 }

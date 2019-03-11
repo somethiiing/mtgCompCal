@@ -73,7 +73,7 @@ function createISODate (date, time) {
 
   const timeArr = time.split(':');
   const hour = timeArr[0];
-  const mins = timeArr[1];
+  const mins = timeArr[1] || '00';
 
   const newDate = new Date(year, month, day, hour, mins)
 

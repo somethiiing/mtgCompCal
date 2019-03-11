@@ -1,7 +1,7 @@
 const { createEvent, createISODate } = require('./utils');
 const storeData = require('./data/data.js');
 
-const timezone = 'America/New_York'
+const timezone = 'America/New_York';
 
 const createEventData = ({store, eventName, date, time, desc}) => {
   const startTime = createISODate(date, time);
@@ -9,9 +9,9 @@ const createEventData = ({store, eventName, date, time, desc}) => {
   const info = storeData[store];
 
   return {
-    summary: `${info.name}: ${eventName}`,
+    summary: `${eventName} - ${info.name}`,
     location: info.address,
-    description: `${desc} \n ${info.fb}`,
+    description: `${desc} \n ${info.fb} \n ${info.site}`,
     start: {
       dateTime: startTime,
       timeZone: timezone
