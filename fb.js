@@ -22,8 +22,12 @@ const getEventData = (cb) => {
     `/me/events?fields=${fields}`,
     'GET',
     (resp) => {
-      resp.data.forEach( event => events[event.id] = event);
-      cb();
+      if (resp.data === undefined) {
+        throw new Error(JSON.stringify(resp, null, 2));
+      } else {
+        resp.data.forEach( event => events[event.id] = event);
+        cb();
+      }
     }
   );
 }
