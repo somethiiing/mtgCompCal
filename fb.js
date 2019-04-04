@@ -49,7 +49,7 @@ const structureEventData = (store, eventId) => {
         timeZone
       },
       end: {
-        dateTime: (new Date(event.end_time) ).toISOString(),
+        dateTime: (new Date(event.end_time || event.start_time) ).toISOString(),
         timeZone
       }
     };
